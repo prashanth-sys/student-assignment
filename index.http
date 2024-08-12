@@ -1,0 +1,60 @@
+POST http://localhost:3000/users/
+Content-Type: application/json
+
+{
+  "username": "user2",
+  "password": "password2",
+  "email": "user2@example.com"
+} 
+
+### 
+
+POST http://localhost:3000/login/
+Content-Type: application/json 
+
+{
+  "username": "user2",
+  "password": "password2"
+} 
+
+### 
+
+GET http://localhost:3000/assignment/ 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIyIiwiaWF0IjoxNzIzMzc5MzA3fQ.9p5i2C2DER_zsU3rbpluNQzQ7MD9lD7pQrVOccMNCTo
+
+### 
+
+GET http://localhost:3000/assignment/3 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIyIiwiaWF0IjoxNzIzMzc5MzA3fQ.9p5i2C2DER_zsU3rbpluNQzQ7MD9lD7pQrVOccMNCTo
+
+
+### 
+
+POST http://localhost:3000/assignment/ 
+Content-Type: application/json 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIyIiwiaWF0IjoxNzIzMzc5MzA3fQ.9p5i2C2DER_zsU3rbpluNQzQ7MD9lD7pQrVOccMNCTo
+
+{
+    "student_id":3,
+    "title": "History Report",
+    "description":"Prepare a report on the Industrial Revolution",
+    "status":"Late"
+} 
+
+### 
+
+PUT http://localhost:3000/assignment/4/ 
+Content-Type: application/json 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIyIiwiaWF0IjoxNzIzMzc5MzA3fQ.9p5i2C2DER_zsU3rbpluNQzQ7MD9lD7pQrVOccMNCTo
+
+{
+    "student_id":4,
+    "title": "History Report",
+    "description":"Prepare a report on the Industrial Revolution",
+    "status":"Completed"
+} 
+
+### 
+
+DELETE http://localhost:3000/assignment/4/ 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIyIiwiaWF0IjoxNzIzMzc5MzA3fQ.9p5i2C2DER_zsU3rbpluNQzQ7MD9lD7pQrVOccMNCTo
