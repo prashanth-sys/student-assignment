@@ -1,4 +1,4 @@
-Hi Nxtwave and playpower company 
+Hi Nxtwave and Altius Technologies company 
 myself Prashanth Kumar Reddy 
 
 This is all about my backend part of student assignment  
